@@ -1,28 +1,45 @@
 const linkData = [
   {
+    key: 1,
+    linkId: "btn__twitter",
     linkRef: "https://training.zuri.team/",
-    linkTitle: "Twitter Link",
+    linkText: "Twitter Link",
+    linkTitle: "Link to my twitter account",
   },
   {
+    key: 2,
+    linkId: "btn__zuri",
     linkRef: "https://training.zuri.team/",
-    linkTitle: "Zuri Team",
+    linkText: "Zuri Team",
+    linkTitle: "Have a look at the team at Zuri",
   },
   {
+    key: 3,
+    linkId: "books",
     linkRef: "https://books.zuri.team/",
-    linkTitle: "Zuri Books",
+    linkText: "Zuri Books",
+    linkTitle: "Find books on design and coding here",
   },
   {
-    linkRef:
-      "https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>",
-    linkTitle: "Python Books",
+    key: 4,
+    linkId: "book__python",
+    linkRef: "https://books.zuri.team/python-for-beginners?ref_id=<bobbiie>",
+    linkText: "Python Books",
+    linkTitle: "Buy the complete Python course here",
   },
   {
+    key: 5,
+    linkId: "pitch",
     linkRef: "https://background.zuri.team",
-    linkTitle: "Background Check for Coders",
+    linkText: "Background Check for Coders",
+    linkTitle: "Get your background code checks done without using your cheque",
   },
   {
+    key: 6,
+    linkId: "book__design",
     linkRef: "https://books.zuri.team/design-rules",
-    linkTitle: "Design Books",
+    linkText: "Design Books",
+    linkTitle: "Get a free design book courtesy of Zuri",
   },
 ];
 

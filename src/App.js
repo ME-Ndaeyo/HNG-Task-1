@@ -1,17 +1,17 @@
 import "./App.css";
-import Avatar from "./components/Avatar";
 import Footer from "./components/Footer";
 import Logo from "./components/Logo";
 import linkData from "./linkData";
+import Profile from "./components/Profile";
 
 function App() {
   const linkEl = linkData.map(link => {
-    return <a href={link.linkRef} className='App-link' target='_blank' rel="noreferrer noopener">{link.linkTitle}</a>
+    return <a key={link.key} href={link.linkRef} className='App-link' id={link.linkId} target='_blank' rel="noreferrer noopener" title={link.linkTitle}>{link.linkText}</a>
   })
   return (
     <div className="App">
       <main>
-        <Avatar name='Natasha Bob'/>
+        <Profile/>
         {linkEl}
         <Logo/>
         <Footer/>
