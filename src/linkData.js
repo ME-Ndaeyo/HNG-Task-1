@@ -2,7 +2,7 @@ const linkData = [
   {
     key: 1,
     linkId: "btn__twitter",
-    linkRef: "https://training.zuri.team/",
+    linkRef: "https://twitter.com/ME_Ndaeyo",
     linkText: "Twitter Link",
     linkTitle: "Link to my twitter account",
   },
@@ -25,7 +25,7 @@ const linkData = [
     linkId: "book__python",
     linkRef: "https://books.zuri.team/python-for-beginners?ref_id=<bobbiie>",
     linkText: "Python Books",
-    linkTitle: "Buy the complete Python course here",
+    linkTitle: "Buy my complete Python course here",
   },
   {
     key: 5,
