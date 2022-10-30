@@ -18,6 +18,10 @@
   border-radius: 50%;
 }
 
+#slack{
+  display: none;
+}
+
 .share-box{
   background-color: transparent;
   width: 2rem;

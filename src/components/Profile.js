@@ -10,7 +10,7 @@ export default function Profile(){
         <h4 id="twitter">ME_Ndaeyo</h4>
 
         {/********SLACK USERNAME*********/}
-        {/* <h4 id="slack">bobbiie</h4> */}
+        <h4 id="slack">bobbiie</h4>
         
         <div className="share-box">
             <img src={share} alt='share logo' className="share"/>
