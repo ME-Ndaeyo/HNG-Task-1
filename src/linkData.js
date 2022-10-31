@@ -23,7 +23,7 @@ const linkData = [
   {
     key: 4,
     linkId: "book__python",
-    linkRef: "https://books.zuri.team/python-for-beginners?ref_id=<bobbiie>",
+    linkRef: "https://books.zuri.team/python-for-beginners?ref_id=bobbiie",
     linkText: "Python Books",
     linkTitle: "Buy my complete Python course here",
   },
