@@ -116,18 +116,16 @@ button {
   border-radius: 8px;
 }
 
-
-
 .form_text {
   display: block;
   grid-row: 1;
   grid-column: 1/-1;
 }
-.form_text h2{
+.form_text h2 {
   font-size: 1.8rem;
   margin-block: 0.4rem;
 }
-.form_text p{
+.form_text p {
   font-size: 1.1rem;
   margin-block: 0.3rem;
 }
@@ -138,15 +136,22 @@ button {
   margin-inline-end: 0.5rem;
 }
 
-input:focus-visible, textarea:focus-visible{
+input:focus-visible,
+textarea:focus-visible {
   outline: none;
-  box-shadow: 0 0px 3px 2px #B2DDFF;
+  box-shadow: 0 0px 3px 2px #b2ddff;
 }
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
   color: #222;
 }
 
-textarea:invalid:focus-visible{
+textarea:invalid,
+input:invalid:focus-visible {
+  outline: none;
+  box-shadow: 0 0px 2px 1px #fc1212;
+}
+textarea:invalid:focus-visible {
   outline: none;
   box-shadow: 0 0px 4px 3px #fc1212;
 }
@@ -174,49 +179,50 @@ textarea:invalid:focus-visible{
   align-items: center;
 }
 
-.agree input[type='checkbox']{
+.agree input[type="checkbox"] {
   appearance: none;
   position: relative;
   cursor: pointer;
   margin-inline-start: 0;
-  margin-inline-end: 0.6rem;
+  margin-inline-end: 0.8rem;
 }
-.agree input[type='checkbox']:checked{
-  box-shadow: 0 0px 3px 2px #175CD3;
+.agree input[type="checkbox"]:checked {
+  box-shadow: 0 0px 3px 2px #175cd3;
 }
-.agree input[type='checkbox']:checked::before{
-  content: '✔';
+.agree input[type="checkbox"]:checked::before {
+  content: "✔";
   position: absolute;
   top: 45%;
   right: 0;
   transform: translate(-50%, -50%);
-  color: #1570EF;
+  color: #1570ef;
 }
 
-button{
+button {
   grid-column: 1/-1;
   grid-row: 6;
 
   font-size: 1rem;
   font-weight: 500;
   color: #fff;
-  background-color: #1570EF;
+  background-color: #1570ef;
   height: 2.6rem;
   outline: none;
   cursor: pointer;
 }
-button:hover{
-  background-color: #175CD3
+button:hover {
+  background-color: #175cd3;
 }
-button:focus{
-  border: 3px solid #B2DDFF;
+button:focus {
+  border: 3px solid #b2ddff;
 }
-button:active, button:visited{
+button:active,
+button:visited {
   border: none;
-  background-color: #B2DDFF;
+  background-color: #b2ddff;
 }
 
-.success_message{
+.success_message {
   margin: 0 auto;
   padding: 1.2rem 1.8rem;
   grid-column: 1/-1;
@@ -225,7 +231,7 @@ button:active, button:visited{
   box-shadow: 0 0px 3px 2px #bbb;
 }
 
-.error_message{
+.error_message {
   margin-block-start: 0.3rem;
   font-size: 0.7rem;
   color: #fc1212;
@@ -251,6 +257,10 @@ footer p {
 
 /* Mobile View */
 @media screen and (max-width: 37.5em) {
+  html {
+    font-size: 87.5%;
+  }
+
   .main {
     margin: 0 1rem;
   }
@@ -274,7 +284,7 @@ footer p {
     text-decoration: none;
   }
 
-  form{
+  form {
     margin: 1.6rem 1.2rem 4.2rem;
   }
 
@@ -293,6 +303,10 @@ footer p {
   .message {
     grid-row: 5;
   }
+  textarea {
+    font-size: 0.9rem;
+  }
+
   .agree {
     grid-row: 6;
   }
