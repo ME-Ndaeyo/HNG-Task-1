@@ -1,21 +1,18 @@
-import "./App.css";
-import Footer from "./components/Footer";
-import Logo from "./components/Logo";
-import linkData from "./linkData";
-import Profile from "./components/Profile";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import ProfilePage from "./pages/HomePage";
+import ContactMe from "./pages/ContactMePage";
+import Layout from "./components/Layout";
 
 function App() {
-  const linkEl = linkData.map(link => {
-    return <a key={link.key} href={link.linkRef} className='App-link' id={link.linkId} target='_blank' rel="noreferrer noopener" title={link.linkTitle}>{link.linkText}</a>
-  })
   return (
-    <div className="App">
-      <main>
-        <Profile/>
-        {linkEl}
-        <Logo/>
-        <Footer/>
-      </main>
+    <div>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<ProfilePage />} />
+          <Route path="/contact" element={<ContactMe />} />
+        </Routes>
+      </Layout>
     </div>
   );
 }

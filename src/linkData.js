@@ -41,6 +41,14 @@ const linkData = [
     linkText: "Design Books",
     linkTitle: "Get a free design book courtesy of Zuri",
   },
+  {
+    key: 7,
+    linkId: "contact",
+    linkRef: "#",
+    linkText: "Contact me",
+    linkTitle: "Contact me",
+    linkTo:'/contact'
+  },
 ];
 
 export default linkData;
