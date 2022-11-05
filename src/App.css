@@ -146,12 +146,12 @@ textarea:focus::-webkit-input-placeholder {
   color: #222;
 }
 
-textarea:invalid,
+textarea:focus,
 input:invalid:focus-visible {
   outline: none;
   box-shadow: 0 0px 2px 1px #fc1212;
 }
-textarea:invalid:focus-visible {
+textarea:invalid:focus, textarea:invalid:focus-visible {
   outline: none;
   box-shadow: 0 0px 4px 3px #fc1212;
 }
