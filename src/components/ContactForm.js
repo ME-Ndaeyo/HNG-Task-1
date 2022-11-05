@@ -46,14 +46,14 @@ export default function ContactForm() {
       emailInputRef.current.value = "";
       messageInputRef.current.value = "";
       setSubmitted(true);
-      setEmailErr(true);
-      setMessageErr(true);
+      setEmailErr(false);
+      setMessageErr(false);
       setTimeout(() => {
         history("/");
       }, 1500);
     } else {
-        setEmailErr(false);
-        setMessageErr(false);
+        setEmailErr(true);
+        setMessageErr(true);
     }
   }
 
